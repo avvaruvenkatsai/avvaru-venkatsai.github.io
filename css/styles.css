@@ -1,0 +1,191 @@
+/* Global 
+------------------------------------------ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+    color: #323232;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+body h3{
+    font-family: 'Caveat', cursive;
+}
+
+
+/* content wrap
+------------------------------------------ */
+.content_wrap{
+    max-width: 800px;
+    width: auto;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+
+/* about myself 
+------------------------------------------ */
+header {
+    background: #001100;
+    color: white;
+    overflow: hidden;
+}
+header h1,header h2 {
+    font-family: 'Caveat', cursive;
+    display: inline-block;
+    margin: 0;
+    
+}
+picture .profile_photo {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+
+
+/* projects 
+------------------------------------------ */
+.projects {
+    background: #C7FFED;
+}
+.projects h4{
+    margin: 0;
+}
+
+/* experience 
+------------------------------------------ */
+.professional_experience {
+    background-color: #FFC2B4;
+}
+.job-item {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  column-gap: 20px;
+}
+.job-type{
+    text-align: left;
+    padding-top: 3rem;
+}
+.job-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-bottom: solid black;
+    text-align: center;
+}
+.job-details p{
+    border-right: solid black;
+}
+.job-details :last-child {
+  border-right: none;
+}
+
+
+
+/* education 
+------------------------------------------ */
+.education{
+    background: #b6ecff;
+}
+
+
+/* skills 
+------------------------------------------ */
+.skills {
+    background: #fce996;
+}
+.skills dt{
+    font-weight: bold;
+}
+
+/* publications 
+------------------------------------------ */
+.publications {
+    background: #c6cffd;
+}
+
+/* footer 
+------------------------------------------ */
+footer{
+    background: #000625;
+    color: white;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    
+}
+footer .contact-list{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0;
+}
+footer svg{
+    color: white;
+}
+footer a {
+    color: white;
+    background-color: lightseagreen;
+    padding: 3px;
+    border-radius: 4px;
+    margin: 1em;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    
+}
+footer a:hover {
+    color: lightsalmon;
+}
+.author {
+    display: inline-block;
+}
+footer h2{
+    margin: 0;
+}
+
+
+/* responsive 
+------------------------------------------ */
+@media screen and (min-width:850px){
+    .job-details {
+    border-bottom: solid black;
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 0;
+    line-height: 0.5em;
+}
+.job-details p{
+    border-right: solid black;
+}
+.job-details :last-child {
+  border-right: none;
+}
+footer .contact-list{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+footer a {
+    color: white;
+    background-color: lightseagreen;
+}
+
+}
+
+
+@media screen and (max-width:350px){
+    .job-item {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  column-gap: 5px;
+    }
+
+}
+
+
